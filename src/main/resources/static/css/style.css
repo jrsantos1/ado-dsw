@@ -1,0 +1,88 @@
+body{
+    background-color: var(--bg-color);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    color: var(--text-color-gray)
+}
+.container{
+    display: flex;
+}
+
+.sec{
+    height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sec_sobre{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.sidenav{
+    width: 250px;
+    height: 100vh;
+    padding: 20px;
+    border-right: 1px solid gray;
+    position: fixed;
+}
+
+.sidenav ul{
+    margin-top: 50px;
+}
+
+.sidenav ul li{
+    padding: 5px;
+}
+
+.sidenav ul li a{
+    color: var(--text-color-orange);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidenav ul li a:hover{
+    background-color: var(--text-color-hover-gray);
+}
+
+.main{
+    width: 100%;
+    padding: 50px;
+    position: relative;
+    margin-left: 250px;
+}
+
+.endereco_e_contato{
+    font-family: 'Archivo Narrow';
+    color: grey;
+    font-weight: bold;
+}
+
+.box-text{
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgba(84, 106, 126, 0.5);
+    box-shadow: 10px 10px lightblue;
+}
+
+.sec_cargo{
+    margin-top: 4rem
+}
+
+.box-text p{
+    margin-top: 10px;
+    color: #fff;
+}
+
+.box-text H2{
+    color: #fff;
+}
+
+.box-text:hover
+{
+    border: solid 1px grey;
+}

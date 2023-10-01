@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Jhonatan Ribeiro</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/config.css}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Antonio' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Archivo Narrow' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bellota Text' rel='stylesheet'>
+
+</head>
+<body>
+<script type="text/javascript" src="js/script.js"></script>
+<div class="container" id="home">
+    <aside class="sidenav">
+        <ul>
+            <li><a href="#home"> SOBRE MIM</a></li>
+            <li><a href="#educacao"> EDUCAÇÃO </a></li>
+            <li><a href="#experiencia"> EXPERIÊNCIA </a></li>
+            <li><a href="#cursos"> CURSOS E.C </a></li>
+            <li><a href="#projetos"> PROJETOS </a></li>
+        </ul>
+    </aside>
+    <main class="main">
+        <section class="sec sec_sobre" id="sobre">
+            <h1 class="title" th:text="${dadosPessoais.nome}"></h1>
+            <H3 class="sub_title"  th:text="${dadosPessoais.objetivo}"> DESENVOLVEDOR WEB - PYTHON / JAVA</H3>
+            <br>
+            <pre class="endereco_e_contato">
+            ENDEREÇO: <span th:text="${dadosPessoais.endereco}"> </span>
+            CONTATO: <span th:text="${dadosPessoais.contato}"> </span>
+            TELEFONE: <span  th:text="${dadosPessoais.telefone}"> </span>
+            LINKEDIN:<span th:text="${dadosPessoais.linkedin}"> </span>
+            GIHUB: <span th:text="${dadosPessoais.github}"> </span>
+
+        </pre>
+            <br>
+            <br>
+            <br>
+            <article class="box-text">
+                <h2> Resumo </h2>
+                <p class="" th:text="${dadosPessoais.resumo}">
+<!--                    Sou apaixonado por tecnologia e adoro aprender coisas novas sobre diferentes áreas, atualmente sou estagiário do Itaú-->
+<!--                    Unibanco na área de riscos financeiros, atuando nos times de atendimento e projetos, apoio o desenvolvimento das ferramentas-->
+<!--                    internas de controle de riscos, também ajudo na automação de rotinas para-->
+<!--                    melhor otimização do tempo de toda equipe. Estou no quarto semestre do curso de Análise e desenvolvimento de sistemas-->
+<!--                    no Senac-SP e concluí o curso de técnico de informática na mesma instituição. Em meus estudos procuro dar maior enfoque nas áreas de-->
+<!--                    desenvolvimento web e análise de dados.-->
+                </p>
+            </article>
+        </section>
+        <section class="sec sec_educacao" id="educacao">
+            <h1 class="title"> EDUCAÇÃO </h1>
+            <H3 class="sub_title"> CENTRO UNIVERSIÁRIO SENAC </H3>
+            <h5> CURSO: ANÁLISE E DESENVOLVIMENTO DE SISTEMAS </h5>
+            <p> 02/2022 à 06/2024 </p>
+            <p>Status: Cursando</p>
+
+            <H3 class="sub_title" style="margin-top: 4rem"> SENAC NAÇÕES UNIDAS </H3>
+            <h5> CURSO: TÉCNICO EM INFORMÁTICA </h5>
+            <p> 02/2014 à 06/2015 </p>
+            <p>Status: Concluído</p>
+
+        </section>
+
+        <section class="sec sec_experiencia" id="experiencia">
+            <h1 class="title"> EXPERIÊNCIA </h1>
+            <div class="sec_cargo">
+                <H3 class="sub_title"> ITAÚ UNIBANCO </H3>
+                <h5> CARGO: RISCO DE MERCADO - INTERNO </h5>
+                <p> 06/2022 - ATUAL </p>
+                <p>Atividades: </p>
+                <ul>
+                    <li> - Apoio no desenvolvimento de ferramentas internas, utilizando python (dash, flask, django) e javascript (angular);</li>
+                    <li> - Apoio no tratamento de dados e na geração de consultas avançadas com sql para gerar novos relatórios;</li>
+                    <li> - Criação de dashboards para acompanhamento de indicadores. </li>
+                </ul>
+            </div>
+
+            <div class="sec_cargo">
+                <H3 class="sub_title"> CINÉPOLIS CINEMAS </H3>
+                <h5> CARGO: ASSISTENTE DE OPERAÇÕES </h5>
+                <p> 06/2017 à 05/2022 </p>
+                <p>Atividades: </p>
+                <ul>
+                    <li> - Apoio no desenvolvimento de relatórios gerênciais, utilizando python e excel;</li>
+                    <li> - Apoio no gerenciamento das notas fiscais emitidas para cada filial e sua inserção no sistema de ERP;</li>
+                    <li> - Criação de dashboards para acompanhamento de indicadores. </li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+</div>
+</body>
+</html>
